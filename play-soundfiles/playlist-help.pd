@@ -1,0 +1,12 @@
+#N canvas 651 502 773 176 12;
+#X obj 38 109 dac~;
+#X text 258 36 Navigation:;
+#X text 257 98 1-9 and ⌧ (10) \, = (11) and / (12): Execute the corresponding
+line.;
+#X text 257 76 - and backspace: Execute previous line.;
+#X text 257 57 + and space: Execute next line.;
+#X obj 38 70 playhd~;
+#X obj 38 38 playlist playlist.txt;
+#X connect 5 0 0 0;
+#X connect 5 0 0 1;
+#X connect 6 0 5 0;
