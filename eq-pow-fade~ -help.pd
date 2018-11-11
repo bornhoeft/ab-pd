@@ -1,0 +1,22 @@
+#N canvas 1525 324 397 265 10;
+#X obj 39 51 noise~;
+#X obj 39 224 dac~;
+#X obj 111 149 hsl 128 15 0 1 0 0 empty set-fad empty -2 -6 0 8 -262144
+-1 -1 12700 1;
+#X obj 254 31 loadbang;
+#X obj 73 102 osc~ 220;
+#X obj 39 174 eq-pow-fade~;
+#X text 145 101 control input:;
+#X text 146 119 0 = left input \, 1 = right input;
+#X msg 255 58 \; pd dsp 1 \; set-fad 0.5 \;;
+#X obj 73 125 *~ 0.2;
+#X obj 39 78 *~ 0.1;
+#X text 33 21 Equal powerfade;
+#X connect 0 0 10 0;
+#X connect 2 0 5 2;
+#X connect 3 0 8 0;
+#X connect 4 0 9 0;
+#X connect 5 0 1 0;
+#X connect 5 0 1 1;
+#X connect 9 0 5 1;
+#X connect 10 0 5 0;
