@@ -1,5 +1,6 @@
-#N canvas 449 619 354 207 10;
-#X obj 60 76 init 1;
-#X floatatom 60 112 5 0 0 0 - - -, f 5;
-#X text 57 41 Initialise number at startup;
+#N canvas 449 619 304 190 12;
+#X obj 40 65 init 1;
+#X floatatom 40 101 5 0 0 0 - - - 0;
+#X text 37 30 Initialise a number at startup;
+#X text 35 144 (c) 2015 Achim Bornhoeft;
 #X connect 0 0 1 0;

@@ -1,0 +1,16 @@
+#N canvas 1525 324 400 200 12;
+#X obj 41 63 noise~;
+#X obj 59 165 dac~;
+#X obj 118 97 hsl 128 15 0 1 0 0 empty set-fad empty -2 -6 0 8 #fcfcfc #000000 #000000 0 1;
+#X obj 41 90 *~ 0.1;
+#X obj 41 122 eq-pow-pan~;
+#X text 140 21 Equal power panning;
+#X obj 38 20 eq-pow-pan~;
+#X obj 277 68 tgl 16 0 empty empty empty 0 -8 0 10 #fcfcfc #000000 #000000 0 1;
+#X msg 277 95 \; pd dsp \$1 \; set-fad 0.5 \;;
+#X connect 0 0 3 0;
+#X connect 2 0 4 1;
+#X connect 3 0 4 0;
+#X connect 4 0 1 0;
+#X connect 4 1 1 1;
+#X connect 7 0 8 0;

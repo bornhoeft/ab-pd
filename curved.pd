@@ -38,8 +38,7 @@
 #X obj 309 20 loadbang;
 #X obj 267 165 t f b;
 #X obj 267 129 * 10;
-#X text 49 444 (C) Copyright 2004 Hans-Christoph Steiner <hans@at.or.at>
-;
+#X text 49 444 (C) Copyright 2004 Hans-Christoph Steiner <hans@at.or.at>;
 #X text 266 458 released under the GNU GPL;
 #X obj 267 60 f \$1;
 #X connect 0 0 3 0;
@@ -79,14 +78,14 @@
 #X connect 13 0 15 0;
 #X connect 15 0 8 0;
 #X restore 183 186 pd draw_array;
-#X floatatom 103 154 8 0 0 0 - - -, f 8;
+#X floatatom 103 154 8 0 0 0 - - - 0;
 #X obj 187 134 loadbang;
 #X obj 174 160 f \$1;
 #X obj 174 57 inlet;
 #X obj 173 80 pack 0 10;
 #X obj 174 109 line;
 #X text 213 58 change curve;
-#X text 178 297 doettlinger09;
+#X text 121 305 doettlinger09;
 #N canvas 0 22 491 504 curve 0;
 #X obj 116 335 pow 1;
 #X obj 72 20 inlet;
@@ -103,8 +102,7 @@
 #X obj 309 20 loadbang;
 #X obj 267 165 t f b;
 #X obj 267 129 * 10;
-#X text 49 444 (C) Copyright 2004 Hans-Christoph Steiner <hans@at.or.at>
-;
+#X text 49 444 (C) Copyright 2004 Hans-Christoph Steiner <hans@at.or.at>;
 #X text 266 458 released under the GNU GPL;
 #X obj 267 60 f \$1;
 #X connect 0 0 3 0;

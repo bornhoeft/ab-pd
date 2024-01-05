@@ -1,0 +1,16 @@
+#N canvas 138 286 517 287 12;
+#X text 125 83 <-- Record on/off;
+#X text 122 97 (must have receive symbol "tog" \, see Properties);
+#X text 49 19 timed hd sample recording;
+#X obj 157 173 bng 15 250 50 0 empty empty empty 0 -6 0 10 #fcfcfc #000000 #000000;
+#X text 54 231 (c) 2007 Achim Bornhoeft;
+#X text 182 171 reset file number counter to 0;
+#X text 193 124 recording time in msec \, if 0 (default) timed recording is off, f 38;
+#X obj 55 53 adc~ 1;
+#X obj 89 83 tgl 19 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000 0 1;
+#X obj 123 133 nbx 5 17 -1e+37 1e+37 0 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000 0 256;
+#X obj 55 194 timed-recording;
+#X connect 3 0 10 3;
+#X connect 7 0 10 0;
+#X connect 8 0 10 1;
+#X connect 9 0 10 2;

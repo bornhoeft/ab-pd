@@ -1,12 +1,13 @@
-#N canvas 235 134 372 265 10;
-#X floatatom 120 193 5 0 0 0 - - -;
-#X msg 117 97 440;
-#X msg 70 96 220;
-#X text 50 31 transposition in semitones based on 440 Hz (no transposition)
-;
-#X msg 158 97 880;
-#X obj 119 145 hz2semi;
-#X connect 1 0 5 0;
-#X connect 2 0 5 0;
-#X connect 4 0 5 0;
-#X connect 5 0 0 0;
+#N canvas 235 134 366 262 12;
+#X floatatom 89 188 5 0 0 0 - - - 0;
+#X msg 86 92 440;
+#X msg 39 91 220;
+#X msg 127 92 880;
+#X obj 88 140 hz2semi;
+#X obj 42 28 hz2semi;
+#X text 109 25 transposition hz to semitones \; 440 Hz = no transposition;
+#X text 16 227 (c) 2008 Achim Bornhoeft;
+#X connect 1 0 4 0;
+#X connect 2 0 4 0;
+#X connect 3 0 4 0;
+#X connect 4 0 0 0;

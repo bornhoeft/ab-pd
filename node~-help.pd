@@ -1,9 +1,9 @@
-#N canvas 533 635 559 289 10;
-#X text 202 73 Click to toggle GOP on/off for easier connecting;
-#X obj 165 59 node~;
-#X obj 165 156 node~;
-#X obj 254 223 node~;
-#X text 85 27 extension nodes for audio cords;
-#X obj 244 94 node~;
+#N canvas 533 635 403 259 12;
+#X text 26 222 Click to toggle GOP on/off for easier connecting;
+#X obj 40 65 node~;
+#X obj 129 82 node~;
+#X obj 187 140 node~;
+#X obj 271 159 node~;
+#X text 23 24 [node~]: Extension nodes for audio cords;
 #X connect 1 0 2 0;
 #X connect 2 0 3 0;

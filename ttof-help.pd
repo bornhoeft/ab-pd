@@ -1,0 +1,18 @@
+#N canvas 708 461 321 237 12;
+#X floatatom 150 142 7 0 0 1 Hz - - 0;
+#X obj 150 92 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
+#X floatatom 35 119 5 0 0 0 - - - 0;
+#X obj 35 70 loadbang;
+#X msg 35 94 100;
+#X obj 150 115 ttof 1000;
+#X obj 35 147 ttof;
+#X floatatom 35 175 7 0 0 1 Hz - - 0;
+#X text 31 32 [ttof]: time/cycle (msec) to frequency;
+#X text 29 209 (c) 2015 AChim Bornhoeft;
+#X connect 1 0 5 0;
+#X connect 2 0 6 0;
+#X connect 3 0 4 0;
+#X connect 4 0 2 0;
+#X connect 5 0 0 0;
+#X connect 6 0 7 0;
+#X coords 0 237 1 236 120 40 0;

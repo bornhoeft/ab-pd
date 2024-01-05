@@ -1,0 +1,14 @@
+#N canvas 324 349 263 215 12;
+#X obj 23 46 / 1000;
+#X obj 23 74 t b f;
+#X msg 23 98 60;
+#X obj 23 122 /;
+#X obj 23 146 outlet bpm;
+#X obj 24 19 inlet beat-msecs;
+#X text 18 177 (c) 2015/2023 AChim Bornhoeft;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X connect 1 1 3 1;
+#X connect 2 0 3 0;
+#X connect 3 0 4 0;
+#X connect 5 0 0 0;

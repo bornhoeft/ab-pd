@@ -1,12 +1,13 @@
-#N canvas 642 431 396 288 12;
-#X text 104 205 (c) 2015 Achim Bornhoeft;
-#X msg 108 67 1-4.wav;
-#X floatatom 108 148 8 0 0 1 (msec) - -, f 8;
-#X obj 108 108 snd-duration;
-#X obj 288 45 loadbang;
-#X obj 288 78 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
-1;
-#X msg 288 101 \; pd dsp \$1;
+#N canvas 642 431 480 265 12;
+#X text 26 227 (c) 2015 Achim Bornhoeft;
+#X msg 32 65 1-4.wav;
+#X floatatom 32 145 8 0 0 1 msec - - 12;
+#X obj 32 106 snd-duration;
+#X obj 174 66 loadbang;
+#X obj 174 99 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X msg 174 122 \; pd dsp \$1;
+#X text 28 180 NOTE: Works only for sounds up to the maximum size of arrays in PD.;
+#X text 29 25 Sound duration in milliseconds;
 #X connect 1 0 3 0;
 #X connect 3 0 2 0;
 #X connect 4 0 5 0;

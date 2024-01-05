@@ -1,9 +1,8 @@
-#N canvas 533 635 559 289 10;
-#X obj 165 59 node;
-#X obj 165 156 node;
-#X obj 254 223 node;
-#X obj 244 94 node;
-#X text 85 27 extension nodes for cords;
-#X text 202 73 Click to toggle GOP on/off for easier connecting;
+#N canvas 533 635 398 301 12;
+#X obj 95 52 node;
+#X obj 95 149 node;
+#X obj 172 219 node;
+#X text 19 261 Click to toggle GOP on/off for easier connecting;
+#X text 23 20 [node]: Extension nodes for cords;
 #X connect 0 0 1 0;
 #X connect 1 0 2 0;

@@ -1,8 +1,8 @@
-#N canvas 596 242 218 244 10;
-#X obj 40 118 key-lock;
-#X obj 40 92 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0 1
-;
-#X floatatom 40 153 5 0 0 0 - - -, f 5;
-#X text 38 51 [key] with tgl to lock;
+#N canvas 596 242 445 230 12;
+#X obj 42 91 key-lock;
+#X obj 42 65 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X floatatom 42 126 5 0 0 0 - - - 0;
+#X text 38 25 [key] with tgl to lock any input from keyboard;
+#X text 36 164 (c) 2016 AChim Bornhoeft;
 #X connect 0 0 2 0;
 #X connect 1 0 0 0;

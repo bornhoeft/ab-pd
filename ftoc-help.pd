@@ -1,0 +1,10 @@
+#N canvas 1070 760 496 211 12;
+#X floatatom 35 131 8 0 0 0 - - - 0;
+#X msg 35 69 440;
+#X text 69 68 Frequency;
+#X text 33 174 (c) 2020 Achim Bornhoeft;
+#X obj 35 100 ftoc;
+#X text 97 133 length of cycle in msecs (1000 / freq = cycle/msecs);
+#X text 33 32 Frequency to cycle length;
+#X connect 1 0 4 0;
+#X connect 4 0 0 0;

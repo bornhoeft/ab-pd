@@ -1,63 +1,62 @@
-#N canvas 1340 859 756 480 10;
-#X obj 97 11 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 3100 1;
-#X obj 94 31 mtof;
-#X obj 83 114 nbx 5 14 0.001 0.999 1 1 empty empty pulse-width 0 -8
-0 10 -262144 -1 -1 0.5 256;
-#N canvas 0 22 450 278 (subpatch) 0;
-#X array \$0-pulse 100 float 1;
-#A 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0;
-#X coords 0 1 99 -1 200 140 1;
-#X restore 373 81 graph;
-#X obj 50 156 pulse~;
-#X obj 280 58 osc~ 0.2;
-#X obj 280 80 *~ 0.5;
-#X obj 280 103 +~ 1;
-#X obj 280 128 /~ 2;
-#X obj 83 133 sig~;
-#X obj 78 228 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
-1;
-#X obj 247 152 pulse~;
-#X obj 50 264 *~ 1;
-#X obj 89 263 metro 100;
-#X obj 89 299 tabwrite~ \$0-pulse;
-#X obj 143 432 dac~;
-#X obj 278 231 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
-1;
-#X obj 247 262 *~ 1;
-#X obj 282 263 metro 100;
-#X obj 282 301 tabwrite~ \$0-pulse;
-#X text 234 337 A Square Wave has a value of "1" half the time \, and
-of "0" the other half of the time. This is called the Pulse Width of
-the Square Wave. Different Pulse Widths make a different sound. And
-when we use a Square Wave as an LFO (Low Frequency Oscillator) \, different
-Pulse Widths will have different effects on the sound it is modulating.
-;
-#X floatatom 94 54 5 0 0 1 Hz - -, f 5;
+#N canvas 1323 420 665 646 12;
+#X obj 227 83 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 224 105 mtof;
+#X obj 224 322 pulse~;
+#X text 97 492 A Square Wave has a value of "1" half the time \, and of "0" the other half of the time. This is called the Pulse Width of the Square Wave. Different Pulse Widths make a different sound. And when we use a Square Wave as an LFO (Low Frequency Oscillator) \, different Pulse Widths will have different effects on the sound it is modulating.;
+#X floatatom 224 130 5 0 0 1 Hz - - 0;
+#X text 42 600 (c) 2023 AChim Bornhoeft;
+#X obj 224 417 dac~;
+#X text 271 245 puls width: \; 0 = square / -0.99 = 99% up / 0.99 = 99% down, f 48;
+#X obj 263 283 *~ 0.99;
+#X obj 263 209 osc~ 0.25;
+#X obj 54 84 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 51 106 mtof;
+#X floatatom 51 131 5 0 0 1 Hz - - 0;
+#X obj 51 451 dac~;
+#X obj 143 370 metro 100;
+#X obj 143 345 tgl 15 0 empty empty draw_it 17 7 0 12 #fcfcfc #000000 #000000 0 1;
+#X obj 430 38 tgl 19 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000 0 1;
+#X msg 430 62 \; pd dsp \$1;
+#X obj 51 375 *~;
+#X obj 224 374 *~;
+#X obj 143 453 tabwrite~ \$0-pulse;
+#N canvas 0 22 454 304 (subpatch) 0;
+#X array \$0-pulse 882 float 0;
+#X coords 0 1 881 -1 200 130 1 0 0;
+#X restore 364 321 graph;
+#X text 364 459 ---- 0.02 seconds ----;
+#X text 329 406 -0.5;
+#X text 336 348 0.5;
+#X text 342 441 -1;
+#X text 351 314 1;
+#X text 349 376 0;
+#X obj 242 350 tgl 19 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000 0 0.3;
+#X obj 69 349 tgl 19 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000 0 0.3;
+#X obj 51 308 pulse~ 100 0.8;
+#X text 50 32 Pulse generator with width modulation (PWM) args: frequency \, pulse width, f 44;
+#X text 341 210 speed of width change (hz);
+#X obj 266 167 hsl 128 15 0.05 20 0 0 empty empty empty -2 -8 0 10 #fcfcfc #000000 #000000 0 1;
+#X floatatom 263 187 5 0 0 0 - - - 0;
 #X connect 0 0 1 0;
-#X connect 1 0 21 0;
-#X connect 2 0 9 0;
-#X connect 4 0 12 0;
-#X connect 5 0 6 0;
-#X connect 6 0 7 0;
-#X connect 7 0 8 0;
-#X connect 8 0 11 1;
-#X connect 9 0 4 1;
-#X connect 10 0 12 1;
-#X connect 10 0 13 0;
-#X connect 11 0 17 0;
-#X connect 12 0 14 0;
-#X connect 12 0 15 0;
-#X connect 12 0 15 1;
-#X connect 13 0 14 0;
-#X connect 16 0 17 1;
-#X connect 16 0 18 0;
-#X connect 17 0 15 0;
-#X connect 17 0 15 1;
-#X connect 17 0 19 0;
-#X connect 18 0 19 0;
-#X connect 21 0 4 0;
-#X connect 21 0 11 0;
+#X connect 1 0 4 0;
+#X connect 2 0 19 0;
+#X connect 4 0 2 0;
+#X connect 8 0 2 1;
+#X connect 9 0 8 0;
+#X connect 10 0 11 0;
+#X connect 11 0 12 0;
+#X connect 12 0 30 0;
+#X connect 14 0 20 0;
+#X connect 15 0 14 0;
+#X connect 16 0 17 0;
+#X connect 18 0 13 0;
+#X connect 18 0 13 1;
+#X connect 18 0 20 0;
+#X connect 19 0 6 0;
+#X connect 19 0 6 1;
+#X connect 19 0 20 0;
+#X connect 28 0 19 1;
+#X connect 29 0 18 1;
+#X connect 30 0 18 0;
+#X connect 33 0 34 0;
+#X connect 34 0 9 0;

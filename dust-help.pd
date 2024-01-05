@@ -1,14 +1,12 @@
-#N canvas 759 391 260 200 10;
-#X obj 36 49 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1 1
-;
-#X obj 36 109 dust;
-#X obj 60 64 hsl 128 15 100 1000 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 1400 1;
-#X obj 36 141 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
--1;
-#X floatatom 57 140 5 0 0 0 - - -;
-#X floatatom 57 87 5 0 0 0 - - -;
-#X text 34 17 a random impulse generator;
+#N canvas 759 391 280 214 12;
+#X obj 32 90 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 32 150 dust;
+#X obj 60 101 hsl 128 15 100 1000 0 0 empty empty empty -2 -8 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 32 182 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
+#X floatatom 57 180 5 0 0 0 - - - 0;
+#X floatatom 57 124 5 0 0 0 - - - 0;
+#X obj 31 34 dust;
+#X text 72 33 a random rhythm generator;
 #X connect 0 0 1 0;
 #X connect 1 0 3 0;
 #X connect 1 1 4 0;

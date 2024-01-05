@@ -1,4 +1,4 @@
-#N canvas 561 352 224 267 10;
+#N canvas 561 352 224 292 10;
 #X obj 68 138 timer;
 #X obj 68 165 t f f;
 #X obj 53 199 -;
@@ -56,6 +56,7 @@
 #X restore 121 71 pd once;
 #X obj 94 43 t b b;
 #X obj 160 17 inlet;
+#X text 23 258 (c) 2017 AChim Bornhoeft;
 #X connect 0 0 1 0;
 #X connect 1 0 2 1;
 #X connect 1 1 2 0;

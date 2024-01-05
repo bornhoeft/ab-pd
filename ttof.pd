@@ -1,0 +1,12 @@
+#N canvas 708 461 180 170 10;
+#X obj 16 107 outlet;
+#X obj 17 20 inlet;
+#X obj 17 79 expr 1000/$f1;
+#X obj 58 21 loadbang;
+#X obj 17 52 f \$1;
+#X text 13 138 (c) 2015 AChim Bornhoeft;
+#X connect 1 0 4 0;
+#X connect 2 0 0 0;
+#X connect 3 0 4 0;
+#X connect 4 0 2 0;
+#X coords 0 170 1 169 120 40 0;

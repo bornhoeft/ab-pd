@@ -1,4 +1,4 @@
-#N canvas 0 22 499 410 10;
+#N canvas 643 668 395 296 10;
 #X obj 49 51 inlet;
 #X obj 73 78 inlet;
 #X obj 49 208 outlet;
@@ -6,7 +6,7 @@
 #X obj 49 157 random 500;
 #X obj 49 130 metro 500;
 #X text 104 48 toggle on/off;
-#X text 18 11 a random impulse generator ala Supercollider;
+#X text 51 16 a random impulse generator ala Supercollider;
 #X text 53 260 right out of delay-help.pd;
 #X text 53 242 Dan Wilcox 2008;
 #X text 114 79 density;

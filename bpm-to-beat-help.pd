@@ -1,0 +1,9 @@
+#N canvas 411 491 262 182 12;
+#X msg 39 50 60;
+#X text 80 50 bpm;
+#X floatatom 39 98 5 0 0 1 beat\ in\ msecs - - 0;
+#X obj 39 74 bpm-to-beat;
+#X text 39 16 BPM to beats;
+#X text 40 135 (c) 2023 AChim Bornhoeft;
+#X connect 0 0 3 0;
+#X connect 3 0 2 0;

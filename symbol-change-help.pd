@@ -1,0 +1,12 @@
+#N canvas 544 246 252 255 12;
+#X msg 27 55 symbol one;
+#X msg 38 84 symbol two;
+#X symbolatom 27 169 10 0 0 0 - - - 0;
+#X obj 39 147 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
+#X text 23 17 change messages to symbols;
+#X text 23 208 (c) 2016 AChim Bornhoeft;
+#X obj 27 118 symbol-change;
+#X connect 0 0 6 0;
+#X connect 1 0 6 0;
+#X connect 6 0 2 0;
+#X connect 6 0 3 0;

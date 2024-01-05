@@ -1,8 +1,9 @@
-#N canvas 615 23 184 202 10;
-#X obj 47 69 t f f;
-#X obj 47 106 -;
+#N canvas 615 25 220 181 10;
+#X obj 45 51 t f f;
+#X obj 48 87 -;
 #X obj 45 25 inlet;
-#X obj 44 141 outlet;
+#X obj 48 111 outlet;
+#X text 41 140 (c) 2017 AChim Bornhoeft;
 #X connect 0 0 1 1;
 #X connect 0 1 1 0;
 #X connect 1 0 3 0;

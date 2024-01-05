@@ -1,9 +1,9 @@
-#N canvas 352 139 242 331 10;
+#N canvas 352 139 234 354 10;
 #X obj 62 218 f;
 #X msg 127 172 1;
 #X msg 173 173 -1;
 #X obj 84 26 key;
-#X floatatom 85 55 5 0 0 0 - - -;
+#X floatatom 85 55 5 0 0 0 - - - 0;
 #X obj 101 108 t b b;
 #X obj 146 108 t b b;
 #X obj 100 220 +;
@@ -12,10 +12,10 @@
 #X obj 57 108 t b b;
 #X msg 82 154 0;
 #X obj 36 25 inlet;
-#X obj 100 250 nbx 4 20 0 999 0 0 empty empty empty 0 -6 0 14 -262144
--1 -1 1 256;
+#X obj 100 250 nbx 4 20 0 999 0 0 empty empty empty 0 -6 0 14 #dfdfdf #ff0400 #000000 0 256;
 #X obj 161 216 inlet;
 #X obj 100 284 outlet;
+#X text 48 311 (c) 2008 AChim Bornhoeft;
 #X connect 0 0 7 0;
 #X connect 1 0 7 1;
 #X connect 2 0 7 1;

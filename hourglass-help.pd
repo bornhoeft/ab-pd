@@ -1,0 +1,18 @@
+#N canvas 644 349 361 328 12;
+#X obj 37 138 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
+#X msg 129 154 4000;
+#X msg 122 130 10000;
+#X msg 105 83 456;
+#X msg 95 60 0;
+#X msg 114 107 70000;
+#X obj 37 249 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #fc0400 #000000;
+#X obj 37 194 hourglass;
+#X text 33 24 [hourglass] a setable (msecs) hourglass;
+#X text 32 290 (c) 20015 Achim Bornhoeft;
+#X connect 0 0 7 0;
+#X connect 1 0 7 1;
+#X connect 2 0 7 1;
+#X connect 3 0 7 1;
+#X connect 4 0 7 1;
+#X connect 5 0 7 1;
+#X connect 7 0 6 0;

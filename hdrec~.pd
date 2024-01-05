@@ -1,7 +1,7 @@
-#N canvas 287 78 928 757 12;
+#N canvas 287 78 648 698 12;
 #X obj 115 224 select 0 1;
 #X msg 311 414 start;
-#X floatatom 381 380 5 0 0 0 - - -, f 5;
+#X floatatom 381 380 5 0 0 0 - - - 0;
 #X obj 241 294 t b b;
 #X text 255 247 <-- Recording time (msec);
 #X obj 147 278 spigot;
@@ -18,8 +18,7 @@
 #X obj 147 310 del;
 #X text 233 49 set file counter;
 #X text 447 378 <-- file number;
-#X obj 115 199 tgl 15 0 empty \$0-tog empty 0 -6 0 10 -262144 -1 -1
-0 1;
+#X obj 115 199 tgl 15 0 empty \$0-tog empty 0 -6 0 10 #fcfcfc #000000 #000000 0 1;
 #X msg 418 535 stop;
 #X obj 381 406 t f b;
 #X obj 419 564 t a;

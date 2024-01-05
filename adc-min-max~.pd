@@ -1,4 +1,4 @@
-#N canvas 670 297 328 438 10;
+#N canvas 670 297 328 438 12;
 #X obj 45 192 snapshot~;
 #X obj 153 148 metro 10;
 #X obj 45 86 env~ 8192;
@@ -11,12 +11,12 @@
 #X obj 178 313 max;
 #X obj 76 277 f 120;
 #X obj 45 47 inlet~;
-#X obj 116 48 loadbang;
-#X msg 169 109 \; pd dsp 1 \;;
+#X obj 128 34 loadbang;
+#X msg 188 93 \; pd dsp 1 \;;
 #X obj 234 46 inlet;
 #X obj 75 383 outlet;
 #X obj 221 386 outlet;
-#X obj 116 73 t b b b b;
+#X obj 128 59 t b b b b;
 #X msg 126 212 120;
 #X obj 127 178 delay 100;
 #X connect 0 0 10 1;
