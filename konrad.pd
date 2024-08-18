@@ -196,12 +196,12 @@
 #X connect 3 0 4 0;
 #X connect 4 0 0 0;
 #X restore 95 124 pd guilabel;
-#X obj 169 126 nbx 3 14 -1e+37 1e+37 0 0 \$1-klevel-s \$1-klevel-r trig-level:47.58 0 -8 0 10 #fcfcfc #000000 #000000 0 256;
+#X obj 169 126 nbx 3 14 -1e+37 1e+37 0 0 \$1-klevel-s \$1-klevel-r trig-level:63.29 0 -8 0 10 #fcfcfc #000000 #000000 0 256;
 #X obj 342 151 nbx 3 14 -1e+37 1e+37 0 0 \$1-kthres-high-s \$1-kthres-high-r thres-high:50 0 -8 0 10 #fcfcfc #000000 #000000 0 256;
 #X obj 490 153 nbx 3 14 -1e+37 1e+37 0 0 \$1-kthres-low-s \$1-kthres-low-r thres-low:50 0 -8 0 10 #fcfcfc #000000 #000000 0 256;
 #X obj 619 154 nbx 3 14 -1e+37 1e+37 0 0 \$1-kretrig-s \$1-kretrig-r retrig-time:200 0 -8 0 10 #fcfcfc #000000 #000000 0 256;
-#X obj 450 315 cnv 15 180 90 empty empty empty 20 12 0 14 #f8f8f8 #404040 0;
-#X obj 479 330 hsl 120 15 0 100 0 0 \$1-klevel-s \$1-klevel-r trig-level:47.58 20 8 0 8 #ffffff #000000 #000000 0 1;
+#X obj 450 315 cnv 15 180 90 empty empty empty 20 12 0 14 #f7f7f7 #404040 0;
+#X obj 479 330 hsl 120 15 0 100 0 0 \$1-klevel-s \$1-klevel-r trig-level:63.29 20 8 0 8 #ffffff #000000 #000000 0 1;
 #X obj 479 360 hsl 120 15 0 100 0 0 \$1-kthres-low-s \$1-kthres-low-r thres-low:50 20 8 0 8 #ffffff #fc0400 #000000 0 1;
 #X obj 479 375 hsl 120 15 0 1000 0 0 \$1-kretrig-s \$1-kretrig-r retrig-time:200 20 8 0 8 #ffffff #00f8fc #000000 0 1;
 #X obj 479 345 hsl 120 15 0 100 0 0 \$1-kthres-high-s \$1-kthres-high-r thres-high:50 20 8 0 8 #ffffff #00fc04 #000000 0 1;

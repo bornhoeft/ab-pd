@@ -1,4 +1,4 @@
-#N canvas 449 175 463 343 12;
+#N canvas 1116 438 463 343 12;
 #X obj 27 307 dac~;
 #X obj 193 130 input~ 1 Clarinet;
 #X obj 28 70 input~ 1 Clarinet 1;

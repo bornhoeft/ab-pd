@@ -1,4 +1,4 @@
-#N canvas 1072 460 507 595 10;
+#N canvas 1072 460 779 737 10;
 #X obj 172 414 qlist;
 #N canvas 559 74 585 543 line-in-qlist 0;
 #X obj 169 201 f 0;
@@ -37,8 +37,7 @@
 #X obj 98 419 outlet;
 #X obj 98 9 inlet;
 #X msg 98 82 1;
-#X obj 98 114 tgl 15 0 empty empty empty 0 -6 0 10 -262144 -1 -1 0
-1;
+#X obj 98 114 tgl 15 0 empty empty empty 0 -6 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 98 46 t b f b;
 #X obj 308 160 outlet;
 #X obj 152 112 - 1;
@@ -79,7 +78,7 @@
 #X text 283 111 r = reset to first line;
 #X obj 131 323 f;
 #X obj 142 21 key;
-#X floatatom 142 50 5 0 0 0 - - -, f 5;
+#X floatatom 142 50 5 0 0 0 - - - 0;
 #X obj 208 322 +;
 #X obj 142 105 sel 114 32 8;
 #X obj 33 147 inlet;
@@ -89,7 +88,7 @@
 #X msg 114 145 0;
 #X obj 198 179 t b a;
 #X obj 259 179 t b a;
-#X floatatom 222 354 5 0 0 0 - - -, f 5;
+#X floatatom 222 354 5 0 0 0 - - - 0;
 #X obj 116 179 t b a b;
 #X msg 192 276 1;
 #X obj 33 180 t b f b;
@@ -136,23 +135,17 @@
 #X obj 278 488 makefilename %s;
 #X obj 277 426 r cue;
 #X obj 278 549 s cue_canvas;
-#X obj 40 67 cnv 15 140 100 empty cue_canvas Cue_00 40 20 0 15 -99865
--4034 0;
-#X obj 88 115 nbx 3 20 0 999 0 0 \$0-set-cue-r set-cue-s Set 0 30 0
-12 -128992 -228856 -228856 0 256;
-#X obj 40 10 cnv 15 140 15 empty empty Cuelist 40 8 0 11 -191407 -1
-0;
+#X obj 40 67 cnv 15 140 133 empty cue_canvas Cue_01 40 20 0 15 #f7f7f7 #000000 0;
+#X obj 88 115 nbx 3 20 0 999 0 0 \$0-set-cue-r set-cue-s Set 10 30 0 12 #f7f7f7 #000000 #000000 0 256;
+#X obj 40 10 cnv 15 140 15 empty empty Cuelist 40 8 0 11 #404040 #ffffff 0;
 #X obj 354 382 r #;
 #X text 350 357 for comments;
 #X text 351 338 recieve dummy;
 #X obj 197 160 key;
-#X floatatom 196 189 5 0 0 0 - - -, f 5;
+#X floatatom 196 189 5 0 0 0 - - - 0;
 #X obj 195 216 sel 113;
-#X obj 40 167 cnv 15 140 32 empty empty empty 20 25 0 15 -99865 -228856
-0;
 #N canvas 546 337 430 644 clock 0;
-#X obj 125 71 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
-1;
+#X obj 125 71 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 125 153 f;
 #X obj 125 93 t f b;
 #X msg 177 119 0;
@@ -320,16 +313,14 @@
 #X obj 270 131 float \$2;
 #X obj 196 218 == \$2;
 #X obj 124 40 r \$0-st-clock;
-#X obj 294 84 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
-1;
-#X obj 293 189 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
-1;
+#X obj 294 84 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 293 189 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 270 47 r set-time;
 #X obj 220 18 r \$0-interim;
 #X obj 220 74 == 0;
 #X obj 125 213 spigot;
 #X obj 70 20 key;
-#X floatatom 70 47 5 0 0 0 - - -, f 5;
+#X floatatom 70 47 5 0 0 0 - - - 0;
 #X obj 70 70 sel 83;
 #X connect 0 0 2 0;
 #X connect 1 0 15 0;
@@ -380,36 +371,23 @@
 #X connect 40 0 41 0;
 #X connect 41 0 0 0;
 #X restore 201 27 pd clock;
-#X obj 72 169 cnv 10 65 13 dummy \$0-label 00:00:00 10 8 0 12 -99865
--228856 0;
-#X obj 59 169 bng 15 250 50 0 \$0-st-clock st-clock empty 17 7 0 10
--162280 -261234 -1;
-#X obj 145 169 tgl 15 0 \$0-interim interim-r empty 17 7 0 10 -162280
--4034 -1 0 1;
+#X obj 71 170 cnv 10 65 13 dummy \$0-label 00:01:00 10 8 0 12 #f7f7f7 #000000 0;
+#X obj 59 169 bng 15 250 50 0 \$0-st-clock st-clock empty 17 7 0 10 #f7f7f7 #ff0400 #000000;
+#X obj 145 169 tgl 15 0 \$0-interim interim-r empty 17 7 0 10 #f7f7f7 #00ff04 #000000 0 1;
 #X obj 173 302 r \$0-set-cue-r;
-#X obj 201 57 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
--1;
+#X obj 201 57 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
 #X msg 286 181 \; pd-big-clock vis \$1;
-#X obj 40 26 cnv 15 140 40 empty section_canvas <<Reset>> 25 25 0 15
--99865 -228856 0;
+#X obj 40 26 cnv 15 140 40 empty section_canvas Section_01 15 25 0 15 #f7f7f7 #000000 0;
 #X obj 286 153 r \$0-big-clock-vis-s;
 #N canvas 386 344 965 726 big-clock 0;
-#X obj 2 -4 cnv 15 960 720 empty empty empty 20 25 0 15 -99865 -228856
-0;
-#X obj 105 321 cnv 50 130 100 empty cue_canvas Cue_00 35 20 0 120 -99865
--4034 0;
-#X obj 651 306 nbx 3 80 0 999 0 0 \$0-set-cue-r set-cue-s empty 0 30
-0 60 -128992 -228856 -228856 0 256;
-#X obj 167 557 cnv 50 65 120 dummy \$0-label 00:00:00 10 8 0 120 -99865
--228856 0;
-#X obj 73 538 bng 60 250 50 0 \$0-st-clock st-clock empty 17 7 0 10
--162280 -261234 -1;
-#X obj 797 535 tgl 60 0 \$0-interim interim-r empty 17 7 0 10 -162280
--4034 -1 0 1;
-#X obj 900 20 tgl 12 0 \$0-big-clock-vis-s \$0-big-clock-vis-r empty
-17 7 0 10 -191407 -1 -1 0 1;
-#X obj 115 115 cnv 15 130 40 empty section_canvas <<Reset>> 20 25 0
-120 -99865 -228856 0;
+#X obj 2 -4 cnv 15 960 720 empty empty empty 20 25 0 15 #606060 #dcdcdc 0;
+#X obj 105 321 cnv 50 130 100 empty cue_canvas Cue_01 35 20 0 120 #606060 #00fc04 0;
+#X obj 651 306 nbx 3 80 0 999 0 0 \$0-set-cue-r set-cue-s empty 0 30 0 60 #7c7c7c #dcdcdc #dcdcdc 0 256;
+#X obj 167 557 cnv 50 65 120 dummy \$0-label 00:01:00 10 8 0 120 #606060 #dcdcdc 0;
+#X obj 73 538 bng 60 250 50 0 \$0-st-clock st-clock empty 17 7 0 10 #9c9c9c #fcc4c4 #000000;
+#X obj 797 535 tgl 60 0 \$0-interim interim-r empty 17 7 0 10 #9c9c9c #00fc04 #000000 0 1;
+#X obj 900 20 tgl 12 0 \$0-big-clock-vis-s \$0-big-clock-vis-r empty 17 7 0 10 #ffffff #ff0400 #000000 0 1;
+#X obj 115 115 cnv 15 130 40 empty section_canvas Section_01 20 25 0 120 #606060 #dcdcdc 0;
 #X coords 0 -1 1 1 12 12 2 900 20;
 #X restore 164 12 pd big-clock;
 #X connect 0 1 1 1;
@@ -431,7 +409,7 @@
 #X connect 26 0 27 0;
 #X connect 27 0 28 0;
 #X connect 28 0 7 0;
-#X connect 30 0 35 0;
-#X connect 34 0 5 0;
-#X connect 38 0 36 0;
+#X connect 29 0 34 0;
+#X connect 33 0 5 0;
+#X connect 37 0 35 0;
 #X coords 0 -1 1 1 140 190 2 40 10;

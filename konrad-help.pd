@@ -1,4 +1,4 @@
-#N canvas 1766 495 471 585 12;
+#N canvas 1499 513 471 585 12;
 #X text 25 541 for name see: http://de.wikipedia.org/wiki/Instinkttheorie;
 #X obj 201 496 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #ff0400 #000000;
 #X floatatom 114 343 4 0 0 0 - low - 0;

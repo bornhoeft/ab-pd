@@ -1,0 +1,10 @@
+#N canvas 144 51 292 262 10;
+#X obj 52 110 list-sum;
+#X floatatom 52 135 5 0 0 0 - - - 0;
+#X msg 52 82 1 2 3 4 5 6;
+#X obj 52 56 loadbang;
+#X text 49 23 Sum of all numbers in a list;
+#X text 45 166 (c) https://github.com/breedx2/pure-data/blob/main/abstractions/list-sum.pd, f 32;
+#X connect 0 0 1 0;
+#X connect 2 0 0 0;
+#X connect 3 0 2 0;
