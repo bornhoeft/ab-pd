@@ -1,4 +1,4 @@
-#N canvas 1000 1039 372 244 12;
+#N canvas 776 517 504 246 12;
 #X obj 211 86 guinogui 0;
 #X obj 34 83 guinogui 1;
 #X text 36 28 Open an abstraction with and without GUI. (See inside the abstraction.);

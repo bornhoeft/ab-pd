@@ -1,4 +1,4 @@
-#N canvas 666 450 540 429 12;
+#N canvas 666 450 389 409 12;
 #X text 45 360 (c) Achim Bornhoeft 2015;
 #X msg 62 171 reset;
 #X msg 124 197 5;

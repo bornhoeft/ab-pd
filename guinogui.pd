@@ -1,4 +1,4 @@
-#N canvas 800 722 434 288 12;
+#N canvas 776 564 434 288 12;
 #X obj 15 219 s \$0-konrad;
 #X obj 105 220 namecanvas \$0-konrad;
 #X obj 15 101 loadbang;
@@ -6,9 +6,9 @@
 #X obj 15 123 f \$1;
 #X obj 5 5 cnv 19 126 76 empty empty show\ gui 20 30 0 16 #e0e0e0 #404040 0;
 #X obj 15 147 * 2;
-#X obj 268 195 cnv 19 80 20 empty empty empty 20 12 0 12 #eec7ca #404040 0;
+#X obj 276 236 cnv 19 80 20 empty empty empty 20 12 0 12 #eec7ca #404040 0;
 #X msg 15 194 donecanvasdialog 100 100 \$1 0 0 1 1 126 76 5 5 \, dirty 0;
-#X text 261 129 These is the range and size of the gop area in the left upper corner, f 18;
+#X text 269 125 These is the range and size of the gop area in the left upper corner, f 18;
 #X text 33 253 (c) 2024 AChim Bornhoeft;
 #X connect 2 0 4 0;
 #X connect 3 0 8 0;
