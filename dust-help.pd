@@ -3,7 +3,7 @@
 #X obj 32 150 dust;
 #X obj 60 101 hsl 128 15 100 1000 0 0 empty empty empty -2 -8 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 32 182 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
-#X floatatom 57 180 5 0 0 0 - - - 0;
+#X floatatom 57 180 5 0 0 1 msecs - - 0;
 #X floatatom 57 124 5 0 0 0 - - - 0;
 #X obj 31 34 dust;
 #X text 72 33 a random rhythm generator;

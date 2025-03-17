@@ -1,4 +1,4 @@
-#N canvas 925 901 293 259 10;
+#N canvas 925 695 293 259 10;
 #X obj 90 10 loadbang;
 #X obj 40 186 snapshot~;
 #X msg 90 116 1;
@@ -9,7 +9,6 @@
 #X obj 108 86 t b f;
 #X obj 108 59 f \$1;
 #X text 101 217 (c) 2020 \, Achim Bornhoeft;
-#X connect 0 0 2 0;
 #X connect 0 0 8 0;
 #X connect 1 0 4 0;
 #X connect 2 0 5 0;

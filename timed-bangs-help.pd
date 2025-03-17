@@ -1,0 +1,7 @@
+#N canvas 496 335 324 146 12;
+#X msg 37 17 2 1000;
+#X text 97 12 number of repetitions \; delay time (msecs);
+#X obj 37 58 timed-bangs;
+#X obj 37 87 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
+#X connect 0 0 2 0;
+#X connect 2 0 3 0;
