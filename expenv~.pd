@@ -1,4 +1,4 @@
-#N canvas 379 398 301 564 12;
+#N canvas 379 398 320 541 12;
 #X obj 36 359 vline~;
 #X obj 143 360 vline~;
 #X obj 144 431 pow~ 2;
@@ -17,7 +17,6 @@
 #X obj 157 29 inlet;
 #X obj 157 59 unpack f f f f;
 #X obj 63 113 t b b b b;
-#X text 31 526 (c) 2022 AChim Bornhoeft;
 #X connect 0 0 3 0;
 #X connect 1 0 2 0;
 #X connect 2 0 9 0;

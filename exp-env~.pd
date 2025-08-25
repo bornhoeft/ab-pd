@@ -1,0 +1,13 @@
+#N canvas 1095 543 338 187 12;
+#X obj 15 88 vline~;
+#X obj 15 145 outlet~;
+#X obj 15 16 inlet;
+#X msg 15 46 1 \$1 \, 0 \$2 \$1;
+#X text 76 118 exponentially curved env;
+#X obj 15 117 pow~ \$1;
+#X obj 136 21 inlet;
+#X connect 0 0 5 0;
+#X connect 2 0 3 0;
+#X connect 3 0 0 0;
+#X connect 5 0 1 0;
+#X connect 6 0 5 1;

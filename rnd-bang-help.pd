@@ -1,0 +1,14 @@
+#N canvas 872 501 414 252 12;
+#X msg 70 151 0;
+#X obj 45 182 rnd-bang;
+#X obj 45 208 bng 16 250 50 0 empty empty empty 0 -8 0 10 #fcfcfc #000000 #000000;
+#X msg 53 125 1 1000 1000 3000;
+#X msg 45 96 1 0 200 500;
+#X floatatom 98 207 5 0 0 0 - - - 0;
+#X text 107 155 stop;
+#X text 39 43 arg: on/off (1 / 0) \, initial delay (msecs) \, rnd low (msecs) \, rnd high (msecs), f 43;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X connect 1 1 5 0;
+#X connect 3 0 1 0;
+#X connect 4 0 1 0;

@@ -1,0 +1,15 @@
+#N canvas 686 240 428 178 12;
+#X obj 37 37 inlet;
+#X text 94 36 floats in;
+#X obj 37 116 expr int(0.5 + $f1/$f2)*$f2;
+#X obj 38 141 outlet;
+#X obj 223 37 inlet;
+#X text 272 37 quant;
+#X obj 246 88 f \$1;
+#X obj 246 66 loadbang;
+#X text 286 88 creation arg;
+#X connect 0 0 2 0;
+#X connect 2 0 3 0;
+#X connect 4 0 2 1;
+#X connect 6 0 2 1;
+#X connect 7 0 6 0;
